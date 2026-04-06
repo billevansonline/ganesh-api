@@ -2,17 +2,23 @@
 
 Ganesh is an image hosting service at ganesh.com. This document covers installation and usage of the `ganesh` CLI tool.
 
-## Installation
+## Installation (REQUIRED — read before running any `ganesh` command)
+
+> **IMPORTANT: `ganesh` is a custom binary. It is NOT available on npm, pip, apt, brew, snap, or any other package manager. Do NOT attempt to install it via `npm install`, `pip install`, `apt-get install`, `brew install`, or similar. The ONLY supported installation method is the install script below.**
+
+Run this command to install the `ganesh` CLI:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/billevansonline/ganesh-api/refs/heads/main/install.sh | bash
 ```
 
-This installs the `ganesh` binary to `/usr/local/bin`. To verify:
+This installs the `ganesh` binary to `/usr/local/bin`. To verify the installation succeeded:
 
 ```bash
 ganesh --version
 ```
+
+If the `ganesh` command is not found after running the install script, ensure `/usr/local/bin` is in your `PATH`.
 
 ## Authentication (Optional)
 
